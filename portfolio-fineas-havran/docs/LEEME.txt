@@ -1,0 +1,2 @@
+Aquí puedes añadir tu CV real como docs/cv.pdf.
+No se incluye un CV ficticio y su botón permanece oculto hasta configurar cvUrl.
