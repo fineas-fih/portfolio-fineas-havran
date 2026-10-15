@@ -1,0 +1,20 @@
+PORTAFOLIO DE FINEAS
+
+Última versión: logo ovalado, español/inglés, portada animada, carrusel de tecnologías, experiencia y formación.
+
+CÓMO ABRIRLO
+1. Extrae el ZIP y abre la carpeta fineas-portfolio en Visual Studio Code.
+2. Abre index.html con Live Server.
+
+Alternativa con Python, desde esa carpeta:
+  python -m http.server 8000
+Visita http://localhost:8000
+
+ARCHIVOS
+index.html: contenido y traducciones.
+style.css: estilos y animaciones.
+app.js: idioma, interacciones y ventanas de detalle.
+assets/: imágenes y logos incluidos.
+
+No requiere npm ni compilación. Las fuentes de Google necesitan conexión; sin ella se usan fuentes del sistema.
+Los accesos GitHub, LinkedIn y correo todavía necesitan tus enlaces reales.
