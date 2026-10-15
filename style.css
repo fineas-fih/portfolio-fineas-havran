@@ -42,8 +42,8 @@ header nav{justify-self:center;gap:26px}
 .languages button[aria-pressed=true]{background:#234d37;color:white}
 .hero{min-height:600px;padding-top:0;padding-bottom:60px}.intro h1{margin-top:0}.intro .lead{font-size:27px;margin:28px 0}
 .social-links{display:flex;align-items:center;gap:12px;margin-top:28px}
-.social-links button{border:1px solid #a7c3af;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:transparent;transition:background .2s,transform .2s}
-.social-links button:hover{background:#c8dfcf;transform:translateY(-2px)}.social-links svg{width:21px;height:21px;flex-shrink:0}
+.social-links a{border:1px solid #a7c3af;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:transparent;transition:background .2s,transform .2s}
+.social-links a:hover{background:#c8dfcf;transform:translateY(-2px)}.social-links svg{width:21px;height:21px;flex-shrink:0}
 .social-links .email-button{width:auto;padding:0 20px;gap:10px;border-radius:30px;font-size:12px;background:var(--ink);color:#f1f5ed;border-color:var(--ink)}
 .social-links .email-button:hover{background:#365d45}.social-links .email-button svg{width:19px}
 .new-about{gap:35px 65px;padding-top:80px}.new-about h2{font-size:40px}.section-subtitle{font-family:Georgia,serif;font-style:italic;font-size:22px!important}
@@ -55,7 +55,7 @@ header nav{justify-self:center;gap:26px}
 @media(max-width:1050px){header{gap:12px;grid-template-columns:90px 1fr 104px}header nav{gap:17px}header nav a{font-size:11px}}
 @media(max-width:800px){header{height:auto;padding-top:20px;padding-bottom:20px;grid-template-columns:1fr 1fr;gap:20px}header>.circle-logo{width:70px;height:70px;font-size:22px;justify-self:start}header nav{grid-column:1/-1;grid-row:2;width:100%;gap:26px;justify-self:center}.languages{grid-column:2;grid-row:1}.hero{min-height:0;padding-top:35px;gap:25px}.intro{padding-top:12px}.hero-visual{max-width:540px}.new-about{padding-top:55px}.tech-card{flex-basis:75%}.resume-section{padding-top:55px;padding-bottom:55px}}
 @media(max-width:520px){header nav{gap:20px}header nav a{font-size:10px}.intro .lead{font-size:24px}.tech-card{flex-basis:90%;padding:20px}.tech-heading{gap:15px}.slider-controls{flex-shrink:0}.hero{padding-bottom:40px}.new-about{gap:15px}.social-links{gap:10px}}
-@media(prefers-reduced-motion:reduce){.social-links button{transition:none}}
+@media(prefers-reduced-motion:reduce){.social-links a{transition:none}}
 
 /* Oval wordmark and device-independent country flags. */
 header>.circle-logo{width:108px;height:64px;border-radius:50%}
@@ -88,3 +88,5 @@ header>.circle-logo,footer>.circle-logo{width:88px;height:40px}
 #experiencia .timeline-entry h3{font-size:19px}
 #formacion .timeline-entry .education-date{font-size:12px;letter-spacing:.4px;font-weight:500;margin:10px 0 12px}
 @media(max-width:800px){header>.circle-logo,footer>.circle-logo{width:81px;height:37px}}
+
+.social-links a:focus-visible{outline:3px solid #477d59;outline-offset:3px}
