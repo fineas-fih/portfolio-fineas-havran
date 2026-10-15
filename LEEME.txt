@@ -17,4 +17,6 @@ app.js: idioma, interacciones y ventanas de detalle.
 assets/: imágenes y logos incluidos.
 
 No requiere npm ni compilación. Las fuentes de Google necesitan conexión; sin ella se usan fuentes del sistema.
-Los accesos GitHub, LinkedIn y correo todavía necesitan tus enlaces reales.
+GitHub y LinkedIn enlazan a los perfiles de Fineas. El botón Escríbeme abre el cliente de correo mediante mailto:.
+La pestaña del navegador utiliza assets/favicon.svg, basado en el logotipo FH del repositorio anterior.
+El archivo CNAME conserva el dominio fineashavran.com en GitHub Pages.
