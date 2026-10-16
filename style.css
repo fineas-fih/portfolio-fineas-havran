@@ -1613,3 +1613,94 @@ footer>.circle-logo {
     transition: none;
   }
 }
+
+/* Responsive bounds and mobile navigation */
+html { overflow-x: clip; }
+body { min-width: 0; }
+header, main, footer {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+main { min-width: 0; }
+.hero > *, .about > *, .project-grid > *, .timeline-entry > * {
+  min-width: 0;
+}
+.logo-carousel { max-width: 100%; }
+.hero-photo { max-width: 100%; }
+.timeline-entry { grid-template-columns: 18px minmax(0, 1fr); }
+section p, section h2, section h3 { overflow-wrap: break-word; }
+
+@media (max-width: 800px) {
+  header {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    padding: 16px clamp(16px, 4vw, 28px);
+    gap: 10px;
+    z-index: 30;
+    isolation: isolate;
+  }
+  header > .circle-logo { justify-self: start; }
+  header > .languages { min-width: 0; justify-self: end; }
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
+    background: #e9f3ec;
+  }
+  .menu-toggle:hover { background: #c8dfcf; }
+  header #main-nav {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: stretch;
+    top: calc(100% + 6px);
+    left: 16px;
+    right: 16px;
+    width: calc(100% - 32px);
+    max-width: none;
+    max-height: calc(100dvh - var(--header-height, 80px) - 30px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 8px;
+    border: 1px solid #9fbea9;
+    border-radius: 16px;
+    background: var(--bg);
+    box-shadow: 0 16px 38px #203c3226;
+  }
+  header #main-nav.menu-open {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+  header #main-nav a {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 1;
+  }
+  header #main-nav a + a { border-top: 1px solid var(--line); }
+  header #main-nav a:hover { background: #c8dfcf; }
+  header #main-nav a:focus-visible {
+    outline-offset: -3px;
+    background: #c8dfcf;
+  }
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: clamp(20px, 5vw, 36px);
+  }
+  .hero h1 {
+    font-size: clamp(48px, 12vw, 82px);
+    letter-spacing: -0.055em;
+  }
+  .hero-visual { max-width: 100%; }
+  .social-links { flex-wrap: wrap; }
+  .about { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 360px) {
+  header { gap: 6px; padding-inline: 12px; }
+  .languages button { padding: 6px; gap: 4px; }
+  .languages { gap: 0; padding: 3px; }
+  .country-flag { width: 20px; height: 14px; }
+}
+
